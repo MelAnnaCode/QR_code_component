@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root{
+  --infoFont: "Outfit";
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(212, 45%, 89%);
+  --grayishBlue: hsl(220, 15%, 55%);
+  --darkBlue: hsl(218, 44%, 22%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  
+  background-color: var(--lightGray);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  font-family: var(--infoFont);
+  font-size: 0.93rem;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.qrContainer{
+  width: max(20%, 20rem);
+  border-radius: 5%;
+  gap: 0,2rem;
+  background-color: var(--white);
+  box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
+}
+
+.imgBlock img{
+  display: block;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 1.2rem;
+  border-radius: 5%;
+}
+
+.infoBlock{
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.infoBlock h1{
+  font-size: 1.4rem;
+  color: var(--darkBlue);
+}
+
+.infoBlock p{
+  padding: 1rem;
+  word-spacing: 1px;
+  color: var(--grayishBlue);
+}
+
+footer p, a{
+  color: var(--grayishBlue);
+}
